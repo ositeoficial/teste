@@ -143,17 +143,18 @@
                 </div>
             </div> 
                          
-      <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Botão WhatsApp</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a href="https://www.google.com" target="_blank" id="whatsappButton">
-    <span class="whatsappIcon"></span>
+    <img src="whatsapp_icon.png" alt="WhatsApp Icon" class="whatsappIcon">
     Fale comigo no WhatsApp
   </a>
   <script src="script.js"></script>
+	
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
@@ -180,10 +181,13 @@ body {
   position: relative;
   overflow: hidden;
   outline: none;
+  margin-top: 20px;
 }
 
 .whatsappIcon {
   margin-right: 10px;
+  width: 20px; /* ajuste de acordo com o tamanho real da imagem do ícone */
+  height: auto; /* ajuste de acordo com o tamanho real da imagem do ícone */
 }
 
 /* Animação de pulsar */
