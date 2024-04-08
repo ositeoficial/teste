@@ -143,7 +143,66 @@
                 </div>
             </div> 
                          
-                                    
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão WhatsApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="https://www.google.com" target="_blank" id="whatsappButton">
+    <span class="whatsappIcon"></span>
+    Fale comigo no WhatsApp
+  </a>
+  <script src="script.js"></script>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#whatsappButton {
+  background-color: #4CAF50; /* Cor verde */
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.whatsappIcon {
+  margin-right: 10px;
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#whatsappButton:focus {
+  animation: pulse 1s infinite alternate;
+}
+</style>
             </div>
            
     <script data-cfasync="false" src="./js/email-decode-min_c0b7_4.js"></script>
